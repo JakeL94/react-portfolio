@@ -2,22 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const colors = ['red', "white", "blue", "deeppink"] //|| 2
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {true && <p>that thing was true</p>}
+      { 2+ 2==5? <p>1984</p>: <p>reality</p>}
+      {colors.map(color=>(
+        <p style={{backgroundColor: color}}>{color}</p>
+
+      )
+      )}
     </div>
   );
 }
