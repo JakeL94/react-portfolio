@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 function Navbar() {
     return (
         <header>
@@ -5,13 +7,13 @@ function Navbar() {
             <nav>
                 <ul>
                     <li>
-                        <a href='#portfolio'>Portfolio</a>
+                        <NavLink to ='/portfolio'>Portfolio</NavLink>
                     </li>
                     <li>
-                        <a href='#contact'>Contact Me</a>
+                        <NavLink to ='/contact'>Contact</NavLink>
                     </li>
                     <li>
-                        <a href='#about'>About Me</a>
+                        <NavLink to ='/'>About</NavLink>
                     </li>
                     <li>
                         <a href='resume link'>Resume</a>
